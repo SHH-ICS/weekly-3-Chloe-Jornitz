@@ -1,3 +1,4 @@
+while (1)
 import locale 
 locale.setlocale(locale.LC_ALL, '')
 print ("Welcome To Pizza Cost Calculator!")
@@ -15,7 +16,12 @@ if toppingnum in ("three","3"):
   toppings = 2.5
 if toppingnum in ("four","4"):
   toppings = 3.35
-subtotal = (pizza+toppings)/2
+else:
+  print ("Error!")
+  print ("Please chose one of the size options \"Large\"or \"Extra Large\".")
+  print ("Please chose an amount of toppings that is a whole number between 1 and 4.")
+  break
+subtotal = (pizza+toppings)
 HST = 0.13*subtotal
 print("Cost:")
 print("Pizza:", locale.currency(pizza))

@@ -2,14 +2,53 @@
 <html>  
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-amber.min.css" />
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <title>Page Title</title>
+    <title>Pizza Cost Calclator</title>
   </head>
   <body>
     
-    <h1>Hello, World!</h1>
- 
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Pizza Cost Calculator</span>
+      </header>
+    
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Pizza Cost Calculator</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html">Order Page</a>
+        </nav>
+      </div>
+    
+      <main class="mdl-layout__content">
+        <div class="page-content">
+            <h1>Welcome to Pizza Cost Calculator!</h1>
+            <h3 style="color: darkred">What size pizza do you want to order?</h3>
+            <form action="handler.php" method="post">
+              <!-- Textfield with Floating Label -->
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3" name="pizza">
+                <label class="mdl-textfield__label" for="sample3">Type "Large" or "Extra Large" here:</label>
+              </div>
+              <h3 style="color: darkred">How many toppings do you want?</h3>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3" name="toppings">
+                <label class="mdl-textfield__label" for="sample3">Type a number from 1-4 here:</label>
+              </div>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                Submit
+              </button>
+            </form>
+            <br>
+    
+            
+        </div>
+      </main>
+    </div>
+
   </body>
 </html>

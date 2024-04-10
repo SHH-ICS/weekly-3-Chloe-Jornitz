@@ -22,7 +22,7 @@
     <div class="mdl-layout__drawer">
       <span class="mdl-layout-title">Pizza Cost Calculator</span>
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="index.html">Order Page</a>
+        <a class="mdl-navigation__link" href="index.html">Welcome Page</a>
       </nav>
     </div>
 

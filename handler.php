@@ -28,30 +28,34 @@
 
     <main class="mdl-layout__content">
       <div class="page-content">
-        <h1 style="font-weight: bold">Cost:</h1>
+        
         <?php
         while (1){
-        $pizza = "";
-        if (isset($_POST['pizza'])) {
-          $pizza = $_POST['pizza'];
+          $pizza = "";
+          if (isset($_POST['pizza'])) {
+            $pizza = $_POST['pizza'];
+          }
+          $toppings = "";
+          if (isset($_POST['toppings'])) {
+            $toppings = $_POST['toppings'];
+          }
+          echo "<h4>" . $pizza . "</h4>";
+          echo "<h4>" . $toppings . "</h4>";
+          if ($pizza =="large" or $pizza =="Large"){
+            $pizzacost = 6;
+          }
+          elseif ($pizza == "extra large" or $pizza == "Extra Large" or $pizza == "Extra large" or $pizza == "extra Large" or $pizza == "extralarge" or $pizza == "Extralarge" or $pizza == "extra-large" or $pizza == "Extra-Large" or $pizza == "Extra-large"){
+            $pizzacost = 10;
+          }
+          else{
+          echo"<h1>Error!</h1>";
+          echo "<h3>Please chose one of the size options \"Large\"or \"Extra Large\".</h3>";
+          break;
+          }
+          echo "<h1 style='font-weight: bold'>Cost:</h1>";
+          echo "<h3>Pizza:".$pizzacost."</h3>";
+          break;
         }
-        $toppings = "";
-        if (isset($_POST['toppings'])) {
-          $toppings = $_POST['toppings'];
-        }
-        echo "<h4>" . $pizza . "</h4>";
-        echo "<h4>" . $toppings . "</h4>";
-        if ($pizza =="large" or $pizza =="Large"){
-          $pizzacost = 6;
-        }
-        elseif ($pizza == "extra large" or $pizza == "Extra Large" or $pizza == "Extra large" or $pizza == "extra Large" or $pizza == "extralarge" or $pizza == "Extralarge" or $pizza == "extra-large" or $pizza == "Extra-Large" or $pizza == "Extra-large"){
-          $pizzacost = 10;
-        }
-        else{
-        echo"Error!";
-        echo "Please chose one of the size options \"Large\"or \"Extra Large\".";
-        }
-        echo $pizzacost;
         ?>
 
         <br>

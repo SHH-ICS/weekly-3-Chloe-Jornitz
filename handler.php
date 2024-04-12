@@ -16,7 +16,7 @@
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
         <!-- Title -->
-        <span class="mdl-layout-title" style="color: yellow; font-weight: bold">Pizza Cost Calculator</span>
+        <span class="mdl-layout-title" style="color: yellow; font-weight: bold; font-size: 40px">Pizza Cost Calculator</span>
     </header>
 
     <div class="mdl-layout__drawer">
@@ -28,9 +28,9 @@
 
     <main class="mdl-layout__content">
       <div class="page-content">
-        
+
         <?php
-        while (1){
+        while (1) {
           $pizza = "";
           if (isset($_POST['pizza'])) {
             $pizza = $_POST['pizza'];
@@ -38,39 +38,33 @@
           $toppings = "";
           if (isset($_POST['toppings'])) {
             $toppings = $_POST['toppings'];
-          } 
-          
+          }
+
           #pizza cost
-          if ($pizza =="large" or $pizza =="Large"){
+          if ($pizza == "large" or $pizza == "Large") {
             $pizzacost = 6;
-          }
-          elseif ($pizza == "extra large" or $pizza == "Extra Large" or $pizza == "Extra large" or $pizza == "extra Large" or $pizza == "extralarge" or $pizza == "Extralarge" or $pizza == "extra-large" or $pizza == "Extra-Large" or $pizza == "Extra-large"){
+          } elseif ($pizza == "extra large" or $pizza == "Extra Large" or $pizza == "Extra large" or $pizza == "extra Large" or $pizza == "extralarge" or $pizza == "Extralarge" or $pizza == "extra-large" or $pizza == "Extra-Large" or $pizza == "Extra-large") {
             $pizzacost = 10;
-          }
-          else{
-          echo"<h1>Error!</h1>";
-          echo "<h3>Please chose one of the size options \"Large\"or \"Extra Large\".</h3>";
-          echo "<h3>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
-          break;
+          } else {
+            echo "<h1 style='text-align: center;'>Error!</h1>";
+            echo "<h3 style='text-align: center;'>>Please chose one of the size options \"Large\"or \"Extra Large\".</h3>";
+            echo "<h3 style='text-align: center;'>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
+            break;
           }
 
           #toppings cost
           if ($toppings == 1) {
             $toppingcost = 1;
-          } 
-          elseif ($toppings == 2) {
+          } elseif ($toppings == 2) {
             $toppingcost = 1.75;
-          } 
-          elseif ($toppings == 3) {
+          } elseif ($toppings == 3) {
             $toppingcost = 2.5;
-          } 
-          elseif ($toppings == 4) {
-            $toppingcost = 4;  
-          }
-          else {
-            echo "<h1>Error!</h1>";
-            echo "<h3>Please chose one of the size options \"Large\"or \"Extra Large\".</h3>";
-            echo "<h3>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
+          } elseif ($toppings == 4) {
+            $toppingcost = 4;
+          } else {
+            echo "<h1 style='text-align: center;'>>Error!</h1>";
+            echo "<h3 style='text-align: center;'>>Please chose one of the size options \"Large\"or \"Extra Large\".</h3>";
+            echo "<h3 style='text-align: center;'>>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
             break;
           }
 
@@ -81,13 +75,12 @@
 
           #output cost
           echo "<h1 style='font-weight: bold'>Cost:</h1>";
-          echo "<h3>Pizza: ".$pizzacost."</h3>";
-          echo "<h3>Toppings: ".$toppingcost."</h3>";
-          echo "<h3>HST: ".$HST."</h3>";
-          echo "<h3>Total cost: " .$totalcost. "</h3>";
+          echo "<h3>Pizza: " . $pizzacost . "</h3>";
+          echo "<h3>Toppings: " . $toppingcost . "</h3>";
+          echo "<h3>HST: " . $HST . "</h3>";
+          echo "<h3>Total cost: " . $totalcost . "</h3>";
 
           break;
-
         }
         ?>
 

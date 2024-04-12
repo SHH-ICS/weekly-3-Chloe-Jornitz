@@ -93,6 +93,16 @@
           echo "<h3>Toppings: " . $toppingcost . "</h3>";
           echo "<h3>HST: " . $HST . "</h3>";
           echo "<h3>Total cost: " . $totalcost . "</h3>";
+          echo "<a href='/index.html'>
+            <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent'>
+              Change Order
+            </button>
+          </a>";
+          echo "<a href='/index2.html'>
+            <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent'>
+              Continue
+            </button>
+          </a>";
 
           break;
         }

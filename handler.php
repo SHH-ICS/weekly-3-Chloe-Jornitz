@@ -38,9 +38,7 @@
           $toppings = "";
           if (isset($_POST['toppings'])) {
             $toppings = $_POST['toppings'];
-          }
-          echo "<h4>" . $pizza . "</h4>";
-          echo "<h4>" . $toppings . "</h4>";
+          } 
           
           #pizza cost
           if ($pizza =="large" or $pizza =="Large"){
@@ -52,6 +50,7 @@
           else{
           echo"<h1>Error!</h1>";
           echo "<h3>Please chose one of the size options \"Large\"or \"Extra Large\".</h3>";
+          echo "<h3>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
           break;
           }
 
@@ -59,16 +58,22 @@
           if ($toppings == 1) {
             $toppingcost = 1;
           } 
-          if ($toppings == 2) {
+          elseif ($toppings == 2) {
             $toppingcost = 1.75;
-          }
-          if ($toppings == 3) {
+          } 
+          elseif ($toppings == 3) {
             $toppingcost = 2.5;
           } 
-          if ($toppings == 4) {
+          elseif ($toppings == 4) {
             $toppingcost = 4;  
           }
-          
+          else {
+            echo "<h1>Error!</h1>";
+            echo "<h3>Please chose one of the size options \"Large\"or \"Extra Large\".</h3>";
+            echo "<h3>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
+            break;
+          }
+
           #HST, subtotal and total cost
           $subtotal = $toppingcost + $pizzacost;
           $HST = $subtotal * 0.13;

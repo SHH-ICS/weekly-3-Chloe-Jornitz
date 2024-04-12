@@ -47,7 +47,7 @@
             $pizzacost = 10;
           } else {
             echo "<h1 style='text-align: center;'>Error!</h1>";
-            echo "<h3 style='text-align: center;'>>Please chose one of the size options \"Large\"or \"Extra Large\".</h3>";
+            echo "<h3 style='text-align: center;'>Please chose one of the size options \"Large\" or \"Extra Large\".</h3>";
             echo "<h3 style='text-align: center;'>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
             break;
           }
@@ -63,7 +63,7 @@
             $toppingcost = 4;
           } else {
             echo "<h1 style='text-align: center;'>>Error!</h1>";
-            echo "<h3 style='text-align: center;'>>Please chose one of the size options \"Large\"or \"Extra Large\".</h3>";
+            echo "<h3 style='text-align: center;'>>Please chose one of the size options \"Large\" or \"Extra Large\".</h3>";
             echo "<h3 style='text-align: center;'>>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
             break;
           }

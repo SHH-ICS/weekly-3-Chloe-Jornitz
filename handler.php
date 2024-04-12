@@ -41,6 +41,8 @@
           }
           echo "<h4>" . $pizza . "</h4>";
           echo "<h4>" . $toppings . "</h4>";
+          
+          #pizza cost
           if ($pizza =="large" or $pizza =="Large"){
             $pizzacost = 6;
           }
@@ -52,9 +54,35 @@
           echo "<h3>Please chose one of the size options \"Large\"or \"Extra Large\".</h3>";
           break;
           }
+
+          #toppings cost
+          if ($toppings == 1) {
+            $toppingcost = 1;
+          } 
+          if ($toppings == 2) {
+            $toppingcost = 1.75;
+          }
+          if ($toppings == 3) {
+            $toppingcost = 2.5;
+          } 
+          if ($toppings == 4) {
+            $toppingcost = 4;  
+          }
+          
+          #HST, subtotal and total cost
+          $subtotal = $toppingcost + $pizzacost;
+          $HST = $subtotal * 0.13;
+          $totalcost = $HST + $subtotal;
+
+          #output cost
           echo "<h1 style='font-weight: bold'>Cost:</h1>";
-          echo "<h3>Pizza:".$pizzacost."</h3>";
+          echo "<h3>Pizza: ".$pizzacost."</h3>";
+          echo "<h3>Toppings: ".$toppingcost."</h3>";
+          echo "<h3>HST: ".$HST."</h3>";
+          echo "<h3>Total cost: " .$totalcost. "</h3>";
+
           break;
+
         }
         ?>
 

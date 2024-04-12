@@ -49,9 +49,11 @@
             echo "<h1 style='text-align: center; font-weight: bold;'>Error!</h1>";
             echo "<h3 style='text-align: center; font-weight: bold;'>Please chose one of the size options \"Large\" or \"Extra Large\".</h3>";
             echo "<h3 style='text-align: center; font-weight: bold;'>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
-            echo "<center><button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent'>
-              Order Again
-            </button></center>";
+            echo "<a href='/index.html'>
+              <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent'>
+                Order Again
+              </button>
+            </a>";
             break;
           }
 
@@ -68,9 +70,11 @@
             echo "<h1 style='text-align: center; font-weight: bold;'>Error!</h1>";
             echo "<h3 style='text-align: center; font-weight: bold;'>Please chose one of the size options \"Large\" or \"Extra Large\".</h3>";
             echo "<h3 style='text-align: center; font-weight: bold;'>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
-            echo "<center><button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent'>
-              Order Again
-            </button></center>";
+            echo "<a href='/index.html'>
+              <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent'>
+                Order Again
+              </button>
+            </a>";
             break;
           }
 

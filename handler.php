@@ -51,11 +51,9 @@
             echo "<h3 class='headingcenter'>Please chose one of the size options \"Large\" or \"Extra Large\".</h3>";
             echo "<h3 class='headingcenter'>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
             echo "<a href='/index.html'>
-              <center>
-                <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent'>
-                  Order Again
-                </button>
-              </center>
+              <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent buttoncenter'>
+                Order Again
+              </button>
             </a>";
             break;
           }
@@ -74,11 +72,9 @@
             echo "<h3 class='headingcenter'>Please chose one of the size options \"Large\" or \"Extra Large\".</h3>";
             echo "<h3 class='headingcenter'>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
             echo "<a href='/index.html'>
-              <center>
-                <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent'>
-                  Order Again
-                </button>
-              </center>
+              <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent buttoncenter'>
+                Order Again
+              </button>
             </a>";
             break;
           }
@@ -90,17 +86,17 @@
 
           #output cost
           echo "<h1 class='heading'>Cost:</h1>";
-          echo "<h3>Pizza: " . $pizzacost . "</h3>";
-          echo "<h3>Toppings: " . $toppingcost . "</h3>";
-          echo "<h3>HST: " . $HST . "</h3>";
-          echo "<h3 class='heading'>Total cost: " . $totalcost . "</h3>";
+          echo "<h4>Pizza: " . $pizzacost . "</h4>";
+          echo "<h4>Toppings: " . $toppingcost . "</h4>";
+          echo "<h4>HST: " . $HST . "</h4>";
+          echo "<h4 class='heading'>Total cost: " . $totalcost . "</h4>";
           echo "<a href='/index.html'>
-            <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent'>
+            <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button'>
               Change Order
             </button>
           </a>";
           echo "<a href='/index2.html'>
-            <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent'>
+            <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button'>
               Continue
             </button>
           </a>";

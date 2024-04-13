@@ -1,1 +1,24 @@
+.title {
+  color: yellow;
+  font-weight: bold;
+  font-size: 40px;
+}
 
+.heading {
+  font-weight: bold;
+}
+
+.headingcenter {
+  font-weight: bold;
+  text-align: center;
+}
+
+.redtext {
+  color: darkred;
+  font-weight: bold;
+}
+
+.buttoncenter {
+  margin: auto;
+  width: 150px;
+}

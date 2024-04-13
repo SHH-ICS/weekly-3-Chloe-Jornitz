@@ -16,7 +16,7 @@
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
         <!-- Title -->
-        <span class="mdl-layout-title" style="color: yellow; font-weight: bold; font-size: 40px">Pizza Cost Calculator</span>
+        <span class="mdl-layout-title title">Pizza Cost Calculator</span>
     </header>
 
     <div class="mdl-layout__drawer">
@@ -47,9 +47,9 @@
           } elseif ($pizza == "extra large" or $pizza == "Extra Large" or $pizza == "Extra large" or $pizza == "extra Large" or $pizza == "extralarge" or $pizza == "Extralarge" or $pizza == "extra-large" or $pizza == "Extra-Large" or $pizza == "Extra-large") {
             $pizzacost = 10;
           } else {
-            echo "<h1 style='text-align: center; font-weight: bold;'>Error!</h1>";
-            echo "<h3 style='text-align: center; font-weight: bold;'>Please chose one of the size options \"Large\" or \"Extra Large\".</h3>";
-            echo "<h3 style='text-align: center; font-weight: bold;'>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
+            echo "<h1 class='headingcenter'>Error!</h1>";
+            echo "<h3 class='headingcenter'>Please chose one of the size options \"Large\" or \"Extra Large\".</h3>";
+            echo "<h3 class='headingcenter'>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
             echo "<a href='/index.html'>
               <center>
                 <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent'>
@@ -70,9 +70,9 @@
           } elseif ($toppings == 4) {
             $toppingcost = 4;
           } else {
-            echo "<h1 style='text-align: center; font-weight: bold;'>Error!</h1>";
-            echo "<h3 style='text-align: center; font-weight: bold;'>Please chose one of the size options \"Large\" or \"Extra Large\".</h3>";
-            echo "<h3 style='text-align: center; font-weight: bold;'>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
+            echo "<h1 class='headingcenter'>Error!</h1>";
+            echo "<h3 class='headingcenter'>Please chose one of the size options \"Large\" or \"Extra Large\".</h3>";
+            echo "<h3 class='headingcenter'>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
             echo "<a href='/index.html'>
               <center>
                 <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent'>
@@ -89,11 +89,11 @@
           $totalcost = $HST + $subtotal;
 
           #output cost
-          echo "<h1 style='font-weight: bold'>Cost:</h1>";
+          echo "<h1 class='heading'>Cost:</h1>";
           echo "<h3>Pizza: " . $pizzacost . "</h3>";
           echo "<h3>Toppings: " . $toppingcost . "</h3>";
           echo "<h3>HST: " . $HST . "</h3>";
-          echo "<h3>Total cost: " . $totalcost . "</h3>";
+          echo "<h3 class='heading'>Total cost: " . $totalcost . "</h3>";
           echo "<a href='/index.html'>
             <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent'>
               Change Order

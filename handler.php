@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
   <!-- Always shows a header, even in smaller screens. -->
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
@@ -90,6 +89,8 @@
           echo "<h4>Toppings: " . $toppingcost . "</h4>";
           echo "<h4>HST: " . $HST . "</h4>";
           echo "<h4 class='heading'>Total cost: " . $totalcost . "</h4>";
+
+          #buttons
           echo "<a href='/index.html'>
             <button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button'>
               Change Order
@@ -100,7 +101,6 @@
               Continue
             </button>
           </a>";
-
           break;
         }
         ?>

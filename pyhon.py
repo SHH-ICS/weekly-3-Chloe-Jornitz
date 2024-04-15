@@ -1,24 +1,24 @@
-while True:
+while (1):
   import locale 
   locale.setlocale(locale.LC_ALL, '')
   print ("Welcome To Pizza Cost Calculator!")
   size = input("What size pizza do you want to order?")
   if size in ("large", "Large"):
     pizza = 6
-  elif size in ("extra large", "Extra Large", "Extra large", "extra Large", "extralarge", "Extralarge", "extra-large", "Extra-Large", "Extra-large"):
+  elif size in ("extra large", "Extra Large", "Extra large", "extra Large", "extralarge", "Extralarge", "ExtraLarge", "extraLarge", "extra-large", "Extra-Large", "Extra-large", "extra-Large"):
     pizza = 10
   else:
     print ("Error!")
     print ("Please chose one of the size options \"Large\"or \"Extra Large\".")
     break
   toppingnum = input("How many toppings do you want?")
-  if toppingnum in ("one","1"):
+  if toppingnum in ("one", "One", "1"):
     toppings = 1
-  elif toppingnum in ("two","2"):
+  elif toppingnum in ("two", "Two", "2"):
     toppings = 1.75
-  elif toppingnum in ("three","3"):
+  elif toppingnum in ("three", "Three", "3"):
     toppings = 2.5
-  elif toppingnum in ("four","4"):
+  elif toppingnum in ("four", "Four", "4"):
     toppings = 3.35
   else:
     print ("Error!")
@@ -32,3 +32,4 @@ while True:
   print ("HST:", locale.currency(HST))
   print ("Total Cost:", locale.currency(HST+subtotal))
   print ("Thankyou for your order!")
+  break

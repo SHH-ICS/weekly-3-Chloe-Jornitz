@@ -43,9 +43,11 @@
           #pizza cost
           if ($pizza == "large" or $pizza == "Large") {
             $pizzacost = 6;
-          } elseif ($pizza == "extra large" or $pizza == "Extra Large" or $pizza == "Extra large" or $pizza == "extra Large" or $pizza == "extralarge" or $pizza == "Extralarge" or $pizza == "extra-large" or $pizza == "Extra-Large" or $pizza == "Extra-large") {
+          } 
+          elseif ($pizza == "extra large" or $pizza == "Extra Large" or $pizza == "Extra large" or $pizza == "extra Large" or $pizza == "extralarge" or $pizza == "Extralarge" or $pizza == "ExtraLarge" or $pizza == "extraLarge" or $pizza == "extra-large" or $pizza == "Extra-Large" or $pizza == "Extra-large" or $pizza == "extra-Large") {
             $pizzacost = 10;
-          } else {
+          } 
+          else {
             echo "<h1 class='headingcenter'>Error!</h1>";
             echo "<h3 class='headingcenter'>Please chose one of the size options \"Large\" or \"Extra Large\".</h3>";
             echo "<h3 class='headingcenter'>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
@@ -58,15 +60,19 @@
           }
 
           #toppings cost
-          if ($toppings == 1) {
+          if ($toppings == 1 or $toppings == "One" or $toppings == "one") {
             $toppingcost = 1;
-          } elseif ($toppings == 2) {
+          } 
+          elseif ($toppings == 2 or $toppings == "Two" or $toppings == "two") {
             $toppingcost = 1.75;
-          } elseif ($toppings == 3) {
+          } 
+          elseif ($toppings == 3 or $toppings == "Three" or $toppings == "three") {
             $toppingcost = 2.5;
-          } elseif ($toppings == 4) {
+          } 
+          elseif ($toppings == 4 or $toppings == "Four" or $toppings == "four") {
             $toppingcost = 3.35;
-          } else {
+          } 
+          else {
             echo "<h1 class='headingcenter'>Error!</h1>";
             echo "<h3 class='headingcenter'>Please chose one of the size options \"Large\" or \"Extra Large\".</h3>";
             echo "<h3 class='headingcenter'>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";

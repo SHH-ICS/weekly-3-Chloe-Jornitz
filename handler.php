@@ -65,7 +65,7 @@
           } elseif ($toppings == 3) {
             $toppingcost = 2.5;
           } elseif ($toppings == 4) {
-            $toppingcost = 4;
+            $toppingcost = 3.35;
           } else {
             echo "<h1 class='headingcenter'>Error!</h1>";
             echo "<h3 class='headingcenter'>Please chose one of the size options \"Large\" or \"Extra Large\".</h3>";
@@ -85,10 +85,10 @@
 
           #output cost
           echo "<h1 class='heading'>Cost:</h1>";
-          echo "<h4>Pizza: " . $pizzacost . "</h4>";
-          echo "<h4>Toppings: " . $toppingcost . "</h4>";
-          echo "<h4>HST: " . $HST . "</h4>";
-          echo "<h4 class='heading'>Total cost: " . $totalcost . "</h4>";
+          echo "<h4>Pizza: $", number_format($pizzacost, 2, '.', ''), "</h4>";
+          echo "<h4>Toppings: $", number_format($toppingcost, 2, '.', ''), "</h4>";
+          echo "<h4>HST: $", number_format($HST, 2, '.', ''), "</h4>";
+          echo "<h4 class='heading'>Total cost: $", number_format($totalcost, 2, '.', ''), "</h4>";
 
           #buttons
           echo "<a href='/index.html'>

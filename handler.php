@@ -6,6 +6,10 @@
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-amber.min.css" />
   <link rel="stylesheet" href="css/styles.css">
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
   <title>Cost</title>
 </head>
 
@@ -43,11 +47,9 @@
           #pizza cost
           if ($pizza == "large" or $pizza == "Large") {
             $pizzacost = 6;
-          } 
-          elseif ($pizza == "extra large" or $pizza == "Extra Large" or $pizza == "Extra large" or $pizza == "extra Large" or $pizza == "extralarge" or $pizza == "Extralarge" or $pizza == "ExtraLarge" or $pizza == "extraLarge" or $pizza == "extra-large" or $pizza == "Extra-Large" or $pizza == "Extra-large" or $pizza == "extra-Large") {
+          } elseif ($pizza == "extra large" or $pizza == "Extra Large" or $pizza == "Extra large" or $pizza == "extra Large" or $pizza == "extralarge" or $pizza == "Extralarge" or $pizza == "ExtraLarge" or $pizza == "extraLarge" or $pizza == "extra-large" or $pizza == "Extra-Large" or $pizza == "Extra-large" or $pizza == "extra-Large") {
             $pizzacost = 10;
-          } 
-          else {
+          } else {
             echo "<h1 class='headingcenter'>Error!</h1>";
             echo "<h3 class='headingcenter'>Please chose one of the size options \"Large\" or \"Extra Large\".</h3>";
             echo "<h3 class='headingcenter'>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
@@ -62,17 +64,13 @@
           #toppings cost
           if ($toppings == 1 or $toppings == "One" or $toppings == "one") {
             $toppingcost = 1;
-          } 
-          elseif ($toppings == 2 or $toppings == "Two" or $toppings == "two") {
+          } elseif ($toppings == 2 or $toppings == "Two" or $toppings == "two") {
             $toppingcost = 1.75;
-          } 
-          elseif ($toppings == 3 or $toppings == "Three" or $toppings == "three") {
+          } elseif ($toppings == 3 or $toppings == "Three" or $toppings == "three") {
             $toppingcost = 2.5;
-          } 
-          elseif ($toppings == 4 or $toppings == "Four" or $toppings == "four") {
+          } elseif ($toppings == 4 or $toppings == "Four" or $toppings == "four") {
             $toppingcost = 3.35;
-          } 
-          else {
+          } else {
             echo "<h1 class='headingcenter'>Error!</h1>";
             echo "<h3 class='headingcenter'>Please chose one of the size options \"Large\" or \"Extra Large\".</h3>";
             echo "<h3 class='headingcenter'>Please chose an amount of toppings that is a whole number between 1 and 4.</h3>";
